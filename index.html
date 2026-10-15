@@ -1,31 +1,263 @@
 <!DOCTYPE html>
-<a<html lang="cs">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anthorpoid</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <meta name="description" content="Školní projekt na téma Postal 2 - jednoduchá one-page stránka">
+    <title>Postal 2 - Školní projekt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <h1>Anthropoid</h1>
-        <ul>
-            <li><a href="index.html" class="navlink">Home <i class="fa-solid fa-house" style="color: #896868;"></i></a></li>
-            <li><a href="spotify.html" class="navlink">Spotify <i class="fa-brands fa-spotify"></i></a></li>
-            <li><a href="shop.html" class="navlink">Shop<i class="fa-solid fa-shop"></i></i></a></li>
-            <li><a href="contact.html" class="navlink">Contact <i class="fa-regular fa-paper-plane"></i></a></li>
-            
-        </ul>
+    <!-- Navigace -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="bi bi-controller"></i> Postal 2
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Domů</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">O hře</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Zbraně</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Galerie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
+    <!-- Hero sekce -->
+    <section id="home" class="hero-section">
 
-    <main>
-        <section class="message">
-            <h1>Anthroipoid best band under the sun</h1>
-            <p>We are better than apollos apollos are shit</p>
-        </section>
-    </main>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="display-3 fw-bold">POSTAL 2</h1>
+            <p class="lead">Jedna z nejkontroverznějších her všech dob</p>
+            <p class="hero-subtitle">Otevřený svět, černý humor a naprostá svoboda volby</p>
+            <a href="#about" class="btn btn-lg btn-custom mt-3">Zjistit více</a>
+        </div>
+    </section>
 
+    <!-- O hře sekce -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">O hře Postal 2</h2>
+                    <p class="section-text">
+                        <strong>Postal 2</strong> je first-person shooter vyvinutý společností Running With Scissors a vydaný v roce 2003. 
+                        Hra je známá svým extrémním násilím, černým humorem a satírou na americkou společnost.
+                    </p>
+                    <p class="section-text">
+                        Hráč ovládá "Postal Dude" - běžného muže, který se snaží splnit jednoduché každodenní úkoly 
+                        (koupit mléko, vrátit knihu do knihovny, zaplatit pokutu) v fiktivním městečku Paradise, Arizona.
+                    </p>
+                    <p class="section-text">
+                        Unikátní rys hry je, že hráč <strong>nemusí nikoho zabíjet</strong> - může splnit všechny úkoly mírumilovně. 
+                        Hra však nabízí obrovský arsenal zbraní a podporuje chaotický styl hraní.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="about-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjm9TfHaeUNBNvcKP0Vv6OqzvWzHezbaf3JqtY_5Kdz8l__ITXDeoFIW0P&s=10" alt="Screenshot ze hry Postal 2 z prezentace E3 2003" class="about-img" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zbraně/Features sekce -->
+    <section id="features" class="section-padding bg-dark">
+        <div class="container">
+            <h2 class="section-title text-center text-white mb-5">Arzenál zbraní</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/223470/ss_0cd804ecb534e4346001f083f0920af543299e89.jpg" alt="Screenshot ze hry Postal 2" class="feature-image" loading="lazy">
+                        <h4>Screenshot ze hry</h4>
+                        <p>Skutečný záběr z Postal 2, nikoli ilustrační obrázek z jiné hry.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Postal_2_E3_2003_%28cropped%29.jpg" alt="Screenshot ze hry Postal 2" class="feature-image" loading="lazy">
+                        <h4>Screenshot ze hry</h4>
+                        <p>Skutečný záběr z rané prezentace Postal 2.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Postal_2_E3_2003.jpg" alt="Screenshot ze hry Postal 2" class="feature-image" loading="lazy">
+                        <h4>Postal 2 ve hře</h4>
+                        <p>Obrázek zachycuje skutečné prostředí hry Postal 2.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Postal_2_E3_2003_%28cropped%29.jpg" alt="Screenshot ze hry Postal 2" class="feature-image" loading="lazy">
+                        <h4>Postal 2 ve hře</h4>
+                        <p>Oficiálně archivovaný screenshot z prezentace hry.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Postal_2_logo.png" alt="Logo hry Postal 2" class="feature-image" loading="lazy">
+                        <h4>Logo Postal 2</h4>
+                        <p>Oficiální logo hry, použité jako jediný grafický prvek bez screenshotu.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Postal_2_E3_2003.jpg" alt="Screenshot ze hry Postal 2" class="feature-image" loading="lazy">
+                        <h4>Screenshot ze hry</h4>
+                        <p>Skutečný obrázek z herní prezentace Postal 2.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie sekce -->
+    <section id="gallery" class="section-padding">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Galerie</h2>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Postal_2_E3_2003.jpg" alt="Screenshot ze hry Postal 2" class="gallery-image" loading="lazy">
+                        <div class="gallery-caption">Screenshot z Postal 2</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Postal_2_E3_2003_%28cropped%29.jpg" alt="Screenshot ze hry Postal 2" class="gallery-image" loading="lazy">
+                        <div class="gallery-caption">Screenshot z E3 2003</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Postal_2_E3_2003.jpg" alt="Screenshot ze hry Postal 2" class="gallery-image" loading="lazy">
+                        <div class="gallery-caption">Herní prostředí</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Postal_2_logo.png" alt="Logo hry Postal 2" class="gallery-image" loading="lazy">
+                        <div class="gallery-caption">Logo Postal 2</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Postal_2_E3_2003_%28cropped%29.jpg" alt="Screenshot ze hry Postal 2" class="gallery-image" loading="lazy">
+                        <div class="gallery-caption">Screenshot z E3 2003</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Postal_2_E3_2003.jpg" alt="Screenshot ze hry Postal 2" class="gallery-image" loading="lazy">
+                        <div class="gallery-caption">Screenshot z Postal 2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt sekce -->
+    <section id="contact" class="section-padding bg-dark">
+        <div class="container">
+            <h2 class="section-title text-center text-white mb-5">Kontakt & Info</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="contact-card">
+                        <h3 class="text-center mb-4">Informace o projektu</h3>
+                        <div class="row text-center">
+                            <div class="col-md-4 mb-3">
+                                <i class="bi bi-calendar3 display-6"></i>
+                                <p>Rok vydání: <strong>2003</strong></p>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <i class="bi bi-building display-6"></i>
+                                <p>Vývojář: <strong>Running With Scissors</strong></p>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <i class="bi bi-tags display-6"></i>
+                                <p>Žánr: <strong>FPS / Open World</strong></p>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <p class="text-center">
+                            Toto je ukázkový školní projekt demonstrující one-page layout s Bootstrap 5 a vlastním CSS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zápatí -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-1">&copy; 2026 Školní projekt - Postal 2 Fan Page</p>
+                    <p class="mb-0 small">Vytvořeno pro výukové účely PVA</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <!-- Ikony validace -->
+                    <div class="validation-icons">
+                        <a href="https://validator.w3.org/check?uri=referer" target="_blank" rel="noopener" title="Validovat HTML">
+                            <i class="bi bi-filetype-html"></i> HTML5
+                        </a>
+                        <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank" rel="noopener" title="Validovat CSS">
+                            <i class="bi bi-filetype-css"></i> CSS3
+                        </a>
+                        <a href="https://validator.w3.org/nu/?doc=referer" target="_blank" rel="noopener" title="Validovat přístupnost">
+                            <i class="bi bi-universal-access"></i> A11y
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <!-- AI Citace -->
+            <div class="ai-citation">
+                <h6><i class="bi bi-robot"></i> AI Citace / Použití umělé inteligence</h6>
+                <div class="citation-details">
+                    <p><strong>Použitý model:</strong> GitHub Copilot (Claude 3.5 Sonnet / GPT-4o)</p>
+                    <p><strong>Prompty použité:</strong></p>
+                    <ul class="mb-2">
+                        <li>Vytvoření HTML struktury one-page webu s Bootstrap 5</li>
+                        <li>Návrh CSS stylů v Postal 2 tématu (tmavé barvy, oříšková/červená akcentová barva)</li>
+                        <li>Implementace smooth scroll navigace a responzivního designu</li>
+                        <li>Přidání školního upozornění, validačních ikon a AI citace</li>
+                    </ul>
+                    <p><strong>Výstupy AI:</strong> Kompletní HTML struktura, CSS styly (style.css), doporučení pro strukturu projektu</p>
+                    <p><strong>Ruční úpravy:</strong> Textový obsah upraven na český jazyk, téma Postal 2, kontrola přístupnosti</p>
+                </div>
+            </div>
+            <div class="school-warning">
+                <span class="warning-icon"><i class="bi bi-exclamation-triangle-fill"></i></span>
+                <span>UPOZORNĚNÍ: Toto je školní/fiktivní webový projekt vytvořený pro výukové účely. Nejedná se o oficiální stránky hry Postal 2.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Jednoduchý smooth scroll pro starší prohlížeče (fallback)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
