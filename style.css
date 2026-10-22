@@ -322,19 +322,11 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 12px;
-    border: 2px solid var(--postal-border);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(255, 107, 0, 0.1);
     transition: var(--transition-normal);
 }
 
-.about-img:hover {
-    border-color: var(--postal-orange);
-    transform: scale(1.02);
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 107, 0, 0.2);
-}
-
 /* --- Feature karty (Zbraně) --- */
-#features {
+#screenshots {
     background-color: var(--postal-darker);
     border-top: 1px solid var(--postal-border);
     border-bottom: 1px solid var(--postal-border);
@@ -378,13 +370,10 @@ body {
 .feature-image {
     width: 100%;
     aspect-ratio: 16 / 9;
-    object-fit: cover;
+    object-fit: contain;
+    background-color: var(--postal-darker);
     border-radius: 12px 12px 0 0;
     transition: var(--transition-normal);
-}
-
-.feature-card:hover .feature-image {
-    transform: scale(1.05);
 }
 
 .feature-card h4 {
@@ -425,12 +414,9 @@ body {
 .gallery-image {
     width: 100%;
     aspect-ratio: 16 / 10;
-    object-fit: cover;
+    object-fit: contain;
+    background-color: var(--postal-darker);
     transition: var(--transition-normal);
-}
-
-.gallery-item:hover .gallery-image {
-    transform: scale(1.05);
 }
 
 .gallery-caption {
